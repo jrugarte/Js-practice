@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+      .mobile-menu {
+        margin: 10px;
+        padding: 10px;
+      }
+      .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .mobile-menu ul li {
+        padding: 5px;
+        margin: 10px 0;
+      }
+
+      .mobile-menu ul li a {
+        color: var(--black);
+        font-size: var(--lg);
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+      .mobile-menu div {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: space-around;
+      }
+      .mobile-menu div ul:nth-child(1) {
+        margin-top: 10px;
+        border-top: 1px solid var(--very-light-pink);
+      }
+      .mobile-menu ul:last-child li:nth-child(1) a {
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+        font-weight: 100;
+        margin: 0;
+      }
+      .mobile-menu ul:last-child li:last-child a {
+        display: inline-block;
+        color: var(--hospital-green);
+        font-size: var(--sm);
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/index.html">CATEGORIES</a></li>
+        <li><a href="/index.html">All</a></li>
+        <li><a href="/index.html">Clothes</a></li>
+        <li><a href="/index.html">Electronics</a></li>
+        <li><a href="/index.html">Furnitures</a></li>
+        <li><a href="/index.html">Toys</a></li>
+        <li><a href="/index.html">Others</a></li>
+      </ul>
+      <div>
+        <ul>
+          <li><a href="/index.html">My orders</a></li>
+          <li><a href="/index.html">My account</a></li>
+        </ul>
+        <ul>
+          <li><a href="/index.html">jotarider@gmail.com</a></li>
+          <li><a href="/index.html">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

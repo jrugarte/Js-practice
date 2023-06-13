@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+      .my-order {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .my-order-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 400px;
+      }
+      .my-order-content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        background-color: var(--text-input-field);
+        align-items: center;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+        text-align: end;
+      }
+
+        .my-order-content p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .my-order-content p:nth-child(2) {
+    font-weight: bold;
+    color: var(--dark);
+        
+    }
+    .my-order-content p:nth-child(1) span:nth-child(1) {
+      color: var(--black);
+      font-weight: bold;
+        
+    }
+    .my-order-content p:nth-child(1) span:nth-child(2) {
+      color: var(--very-light-pink);
+      font-weight: 100;
+      margin-top: 8px;
+        
+    }
+
+    .item{
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+      .item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .item p:nth-child(2) {
+        color: var(--very-light-pink);
+        font-weight: 100;
+        font-size: var(--sm);
+      }
+      @media(max-width:640px){
+
+      }
+    </style>
+  </head>
+  <body>
+    <section class="my-order">
+      <div class="my-order-container">
+        <h1>My order</h1>
+        <div class="my-order-content">
+          <p>
+            <span>06.06.2023</span>
+            <span>23 articles</span>
+          </p>
+          <p>$2307,00</p>
+        </div>
+        <div class="item">
+          <img src="./assets/imgs/1.jpg" alt="" class="item-image" />
+            <p>Honda Crf</p>
+            <p>$ 2500,00</p>
+        </div>
+        <div class="item">
+          <img src="./assets/imgs/5.jpg" alt="" class="item-image" />
+            <p>Crf</p>
+            <p>$ 2500,00</p>
+        </div>
+
+        <div class="item">
+          <img src="./assets/imgs/2.jpg" alt="" class="item-image" />
+            <p>Crf</p>
+            <p>$ 2500,00</p>
+        </div>
+
+        <div class="item">
+          <img src="./assets/imgs/3.jpg" alt="" class="item-image" />
+            <p>Crf</p>
+            <p>$ 2500,00</p>
+        </div>
+
+
+    </section>
+  </body>
+</html>

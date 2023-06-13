@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .login {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .form-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+        justify-items: center;
+      }
+      .logo {
+        margin-top: 48px;
+        width: 150px;
+        justify-self: center;
+        margin-bottom: 32px;
+      }
+      .title {
+        margin-top: 48px;
+        margin-bottom: 4px;
+        font-size: var(--lg);
+        text-align: center;
+      }
+      .subtitle {
+        color: var(--very-light-pink);
+        margin-top: 8px;
+        margin-bottom: 24px;
+        font-size: var(--md);
+        font-weight: 300;
+        text-align: center;
+      }
+    
+
+      .email {
+        width: 100px;
+        height: 100px;
+      }
+      .email-div{
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+        background-color: var(--text-input-field);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+      }
+
+      .primary-button {
+        background-color: var(--hospital-green);
+        color: var(--white);
+        font-size: var(--lg);
+        width: 100%;
+        height: 52px;
+        border: 0px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+      }
+
+      
+      .resend{
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+        justify-items: center;
+      }
+      #resend-a{
+        font-size: var(--sm);
+        color: var(--hospital-green);
+        justify-content: center;
+        text-decoration: none;
+      }
+      @media (max-width: 640px) {
+        .logo {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="form-container">
+        <img
+          src="./Platzi_YardSale_Logos/logo_yard_sale.svg"
+          alt="logo"
+          class="logo"
+        />
+        <p class="title"><b>Email has been sent!</b></p>
+        <p class="subtitle">
+          Please check yout inbox for instructoins on how to reset the password
+        </p>
+        <div class="email-div">
+            <img
+            src="./Platzi_YardSale_Icons/email.svg"
+            alt="email"
+            class="email"
+          />
+
+        </div>
+  
+          <button
+            id="input-login"
+            class="primary-button login-button"
+          >
+            Login
+          </button>
+
+        <p class="resend">
+            <span>Didn't receive the email?</span> <a href="/index.html" id="resend-a">Resend</a>
+
+        </p>
+     
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

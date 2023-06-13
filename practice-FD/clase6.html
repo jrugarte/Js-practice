@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+      .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        gap: 20px;
+        place-content: center;
+      }
+      .card {
+        width: 200px;
+      }
+      .card-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+      }
+      .product-info div p:nth-child(1) {
+        font-weight: 500;
+        font-size: var(--md);
+        margin: 2px;
+      }
+      .product-info div p:nth-child(2) {
+        color: var(--very-light-pink);
+        font-weight: 100;
+        font-size: var(--sm);
+      }
+      .product-info :nth-child(2) {
+        margin: 0px;
+      }
+      @media (max-width: 640px) {
+        .product-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, 140px);
+          /* gap: 10px; */
+          place-content: center;
+        }
+        .card {
+          width: 140px;
+        }
+        .card-image {
+          width: 140px;
+          height: 140px;
+        }
+        .product-info {
+          width: 140px;
+          margin-top: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="product-container">
+      <div class="card">
+        <img src="./assets/imgs/1.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$ 2500,00</p>
+            <p>Cbr</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/2.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/4.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/5.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/6.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/7.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/8.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/9.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/10.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/11.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/12.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imgs/3.jpg" alt="" class="card-image" />
+        <div class="product-info">
+          <div>
+            <p>$2500,00</p>
+            <p>CBR</p>
+          </div>
+          <figure>
+            <img
+              src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg"
+              alt="add-icon"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
