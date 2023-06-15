@@ -27,7 +27,7 @@
         margin: 0;
         font-family: "Quicksand", sans-serif;
       }
-      .product-card {
+      .product-aside {
         position: absolute;
         width: 360px;
         right: 0;
@@ -42,33 +42,33 @@
       .product-close {
         width: 14px;
         height: 14px;
-        position: absolute;  
+        position: absolute;
         background: var(--white);
         top: 20px;
         left: 20px;
         z-index: 2;
         padding: 12px;
         border-radius: 50%;
-        }
-      .product-close:hover {
-        cursor: pointer;    
       }
-      .product-info{
+      .product-close:hover {
+        cursor: pointer;
+      }
+      .product-info {
         padding: 0 24px;
       }
-      .product-info p:nth-child(1){
+      .product-info p:nth-child(1) {
         color: var(--dark);
         font-size: var(--lg);
         font-weight: bold;
         margin: 20px 0 4px 0;
       }
-      .product-info p:nth-child(2){
+      .product-info p:nth-child(2) {
         color: var(--very-light-pink);
         font-size: var(--lg);
         font-weight: 100;
         margin: 4px 0 36px 0;
       }
-      .product-info p:nth-child(3){
+      .product-info p:nth-child(3) {
         color: var(--very-light-pink);
         font-size: var(--sm);
         font-weight: 100;
@@ -85,33 +85,43 @@
         font-family: "Quicksand", sans-serif;
         margin-bottom: 20px;
       }
-      .add-button{
+      .add-button {
         display: flex;
         place-content: center;
         align-items: center;
       }
-      @media(max-width:640px){
-        .product-card{
-            width: 100%;
+      @media (max-width: 640px) {
+        .product-card {
+          width: 100%;
         }
       }
     </style>
   </head>
   <body>
-    <aside class="product-card">
-        <div class="product-close">
-            <img src="./assets/Platzi_YardSale_Icons/icon_close.png" alt="" class="close-img">
-        </div>
+    <aside class="product-aside">
+      <div class="product-close">
+        <img
+          src="./assets/Platzi_YardSale_Icons/icon_close.png"
+          alt=""
+          class="close-img"
+        />
+      </div>
 
-        <img src="./assets/imgs/1.jpg" alt="" class="img-product" />
+      <img src="./assets/imgs/1.jpg" alt="" class="img-product" />
       <div class="product-info">
         <p>$2300,00</p>
         <p>Retro refrigerator</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ipsa asperiores ipsum nobis consectetur cum pariatur ad, quas ut recusandae, blanditiis nihil esse repellat impedit. Animi ratione fugiat laboriosam aspernatur.
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ipsa
+          asperiores ipsum nobis consectetur cum pariatur ad, quas ut
+          recusandae, blanditiis nihil esse repellat impedit. Animi ratione
+          fugiat laboriosam aspernatur.
         </p>
-        <button class="primary-button add-button" ><img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg">Add to cart</button>
+        <button class="primary-button add-button">
+          <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" />Add to
+          cart
+        </button>
       </div>
-      </aside>
-    </div>
+    </aside>
   </body>
 </html>
