@@ -16,43 +16,80 @@ productAsideIcon.addEventListener("click", quitAside);
 function changeMenuEmail() {
   const isMyOrderClosed = myOrder.classList.contains("inactive");
   const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
-  // desktopMenu.classList.toggle("inactive");
-  if (!isMyOrderClosed) {
+  const isProductDetailClosed = productAside.classList.contains("inactive");
+
+  if (!isMyOrderClosed || !isProductDetailClosed) {
     myOrder.classList.add("inactive");
+    productAside.classList.add("inactive");
     if (isDesktopMenuClosed) {
       desktopMenu.classList.toggle("inactive");
-      console.log("menu desktop cerrado, se hizo click y se abrio");
     }
   } else {
     desktopMenu.classList.toggle("inactive");
   }
-  // Lo que hace esta funcion es sacar o ponerle(toggle) la clase(classList) que le indiquemos:
-  // desktopMenu.classList.toggle("inactive");
-  // myOrder.classList.add("inactive");
-  // productAside.classList.toggle("inactive");
 }
 
 function changeMenuMobile() {
-  // Lo que hace esta funcion es sacar o ponerle(toggle) la clase(classList) que le indiquemos:
-  mobileMenu.classList.toggle("inactive");
-  myOrder.classList.add("inactive");
-  productContainer.classList.add("inactive");
-  productAside.classList.add("inactive");
+  const isMyOrderClosed = myOrder.classList.contains("inactive");
+  const isMobileMenuClosed = mobileMenu.classList.contains("inactive");
+  const isProductDetailClosed = productAside.classList.contains("inactive");
+
+  // desktopMenu.classList.toggle("inactive");
+  if (!isMyOrderClosed || !isProductDetailClosed) {
+    myOrder.classList.add("inactive");
+    productAside.classList.add("inactive");
+    if (isMobileMenuClosed) {
+      mobileMenu.classList.toggle("inactive");
+    }
+  } else {
+    mobileMenu.classList.toggle("inactive");
+  }
+
+  // mobileMenu.classList.toggle("inactive");
+  // myOrder.classList.add("inactive");
+  // productContainer.classList.add("inactive");
+  // productAside.classList.add("inactive");
 }
 
 function changeShoppingCart() {
   // Lo que hace esta funcion es sacar o ponerle(toggle) la clase(classList) que le indiquemos:
-  myOrder.classList.toggle("inactive");
-  desktopMenu.classList.add("inactive");
-  mobileMenu.classList.add("inactive");
-  productAside.classList.add("inactive");
+  const isMyOrderClosed = myOrder.classList.contains("inactive");
+  const isMobileMenuClosed = mobileMenu.classList.contains("inactive");
+  const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
+  const isProductDetailClosed = productAside.classList.contains("inactive");
+  // desktopMenu.classList.toggle("inactive");
+  if (!isMobileMenuClosed || !isDesktopMenuClosed || !isProductDetailClosed) {
+    mobileMenu.classList.add("inactive");
+    desktopMenu.classList.add("inactive");
+    productAside.classList.add("inactive");
+    if (isMyOrderClosed) {
+      myOrder.classList.toggle("inactive");
+      // desktopMenu.classList.add("inactive");
+    }
+  } else {
+    myOrder.classList.toggle("inactive");
+  }
+
+  // myOrder.classList.toggle("inactive");
+  // desktopMenu.classList.add("inactive");
+  // mobileMenu.classList.add("inactive");
+  // productAside.classList.add("inactive");
 }
 function showAside() {
-  console.log("funcionando");
-  productAside.classList.remove("inactive");
+  const isMyOrderClosed = myOrder.classList.contains("inactive");
+  const isMobileMenuClosed = mobileMenu.classList.contains("inactive");
+  const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
+
+  if (!isDesktopMenuClosed || !isMobileMenuClosed || !isMyOrderClosed) {
+    myOrder.classList.add("inactive");
+    mobileMenu.classList.add("inactive");
+    desktopMenu.classList.add("inactive");
+    productAside.classList.remove("inactive");
+  } else {
+    productAside.classList.remove("inactive");
+  }
 }
 function quitAside() {
-  console.log("funcionando");
   productAside.classList.add("inactive");
 }
 // en esta parte, vamos a maquetar los objetos desde JS:
