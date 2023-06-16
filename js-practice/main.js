@@ -8,15 +8,27 @@ const productContainer = document.querySelector(".product-container");
 const productAside = document.querySelector(".product-aside");
 const productAsideIcon = document.querySelector(".product-close");
 
-menuEmail.addEventListener("click", changeMenu);
+menuEmail.addEventListener("click", changeMenuEmail);
 iconMenuMobile.addEventListener("click", changeMenuMobile);
 shoppingCart.addEventListener("click", changeShoppingCart);
 productAsideIcon.addEventListener("click", quitAside);
 
-function changeMenu() {
+function changeMenuEmail() {
+  const isMyOrderClosed = myOrder.classList.contains("inactive");
+  const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
+  // desktopMenu.classList.toggle("inactive");
+  if (!isMyOrderClosed) {
+    myOrder.classList.add("inactive");
+    if (isDesktopMenuClosed) {
+      desktopMenu.classList.toggle("inactive");
+      console.log("menu desktop cerrado, se hizo click y se abrio");
+    }
+  } else {
+    desktopMenu.classList.toggle("inactive");
+  }
   // Lo que hace esta funcion es sacar o ponerle(toggle) la clase(classList) que le indiquemos:
-  desktopMenu.classList.toggle("inactive");
-  myOrder.classList.add("inactive");
+  // desktopMenu.classList.toggle("inactive");
+  // myOrder.classList.add("inactive");
   // productAside.classList.toggle("inactive");
 }
 

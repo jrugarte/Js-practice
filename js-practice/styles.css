@@ -263,9 +263,9 @@
     gap: 20px;
     place-content: center;
   }
-  .product-card {
+  /* .product-card {
     width: 200px;
-  }
+  } */
   .card-image {
     width: 200px;
     height: 200px;
@@ -376,7 +376,6 @@
     }
     .my-order {
       width: 100%;
-      /* height: 100vh; */
       position: absolute;
       right: 0;
       /* display: grid;
@@ -400,8 +399,8 @@
         border-radius: 0 0 20px 20px;
 
       }
-    .product-card {
-      width: 140px;
+    .product-aside {
+      width: 100%;
       }
 }
   @media (min-width: 641px) {
